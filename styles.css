@@ -1,0 +1,224 @@
+body {
+    background-color: none;
+}
+
+h1, h2, h3 {
+    font-family: serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: none;
+    color: white;
+}
+
+.logo {
+    flex-grow: 1; /* Expand the logo area to fill available space */
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Monospace;
+    font-size: 14px;
+    display: flex; /* Make the menu items and social icons flex containers */
+    align-items: center; /* Center the items vertically within the nav */
+    justify-content: space-between; /* Add space between menu items and social icons */
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+    font-weight: normal;
+}
+
+/* Style for the dropdown menu */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: none;
+    text-align: left;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+/* Style for the links within the dropdown */
+.dropdown-content a {
+    padding: 10px 20px;
+}
+
+/* Change the background color on hover */
+.dropdown-content a:hover {
+    background: none;
+    font-weight: bold;
+}
+
+/* Keep the selected page in bold */
+nav a:hover {
+    font-weight: bold;
+}
+
+/* Hamburger menu icon for mobile */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* Social media icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-icons a {
+    margin-left: 20px; /* Add space between social icons */
+    text-decoration: none;
+}
+
+
+/* Media query for small screens (mobile) */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .bar {
+        background-color: #fff;
+        height: 4px;
+        width: 30px;
+        margin: 6px 0;
+    }
+
+    /* Show the navigation when the hamburger menu is clicked */
+    .menu-toggle.active + .mobile-menu ul {
+        display: flex;
+    }
+
+    /* Hide social icons on mobile */
+    .social-icons {
+        display: none;
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: serif;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Copyright text */
+footer p:last-child {
+    font-size: 14px;
+}
+
+/* Style links in the footer */
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    footer {
+        padding: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 10px;
+    }
+
+    footer p:last-child {
+        font-size: 12px;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        font-size: 24px;
+    }
+
+    nav ul {
+        display: block;
+        background-color: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        font-size: 18px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
