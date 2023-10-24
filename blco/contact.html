@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact - Bucket List Co.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="contact.css">
+<script src=”main.js” defer></script>
+<title>Home - Bucket List Co.</title>
+</head>
+<body>
+
+<!-- Naviagtion Bar and Logo -->
+<header>
+  <div class="logo">
+      <a href="index.html"><img src="simplelogo.png" alt="Logo"></a>
+  </div>
+  <div class="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </div>
+  <nav class="mobile-menu">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown">
+              <a href="#">Portfolio</a>
+              <ul class="dropdown-content">
+                  <li><a href="photogal.html">Photography</a></li>
+                  <li><a href="videos.html">Videos</a></li>
+                  <li><a href="webdev.html">Web Development</a></li>
+                  <li><a href="social.html">Social Media</a></li>
+          </li>
+      </ul>
+  </nav>
+  <div class="social-icons">
+      <a href="https://www.instagram.com/bucketlistco.pr/?hl=en"><img src="instagram.png" alt="Instagram" width="22px" height="auto"></a>
+      <a href="https://www.facebook.com/profile.php?id=100063462189739"><img src="facebook.png" alt="Facebook" width="22px" height="auto"></a>
+      <a href="https://www.tiktok.com/@bucketlistco_?lang=en"><img src="tik-tok.png" alt="Tik Tok" width="22px" height="auto"></a>
+      <!-- <a href="#"><img src="linkedin.png" alt="LinkedIn" width="22px" height="auto"></a> -->
+  </div>
+</header>
+
+<!-- Rest of your content here -->
+<div class="title">
+   <h1>Contact Us</h1>
+</div>
+
+<div class="container">
+  <form action="email.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+
+    <label for="subject">Subject:</label>
+    <input type="text" name="subject" id="subject">
+
+    <label for="message">Message:</label>
+    <textarea type="text" name="message" id="message" style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+</div>
+
+<footer>
+  <div class="contact-info">
+      <p><a href="contact.html">Contact Us</a></p>
+      <br>
+      <p>(314) 299-5762</p>
+      <p>(314) 299-5779</p>
+      <p>bucketlistjourneys@hotmail.com</p>
+      <p>St. Louis, MO 63113</p>
+  </div>
+  <br>
+  <p>Icons made by Freepik from www.flaticon.com</p>
+  <br>
+  <p>&copy; 2023 Bucket List Co.</p>
+</footer>
+
+</body>
+</html>
